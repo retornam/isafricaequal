@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Is Africa Equal Yet?</title>
+    </head>
+    <body>
+         <object id="africasvg" data="./assets/img/africa.svg"  type="image/svg+xml">
+         </object>
+    </body>
+
+    <script>
+    window.onload = function(){
+        africasvg = document.getElementById('africasvg');
+        africasvgDoc = africasvg.contentDocument;
+        nations = africasvgDoc.getElementsByTagName('path');
+        console.log(nations);
+        for (i=0;i<50;i++){
+            console.log(nations[i].id);
+            if (nations[i].id === 'ZA'){
+                nations[i].style.fill = '#088A08';
+            }
+            else
+                nations[i].style.fill= '#B40404';
+           }
+        }
+    </script>
+</html>
