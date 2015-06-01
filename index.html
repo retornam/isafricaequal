@@ -1,10 +1,18 @@
 <html>
     <head>
         <title>Is Africa Equal Yet?</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel=stylesheet href="https://s3-us-west-2.amazonaws.com/colors-css/2.2.0/colors.min.css">
     </head>
-    <body>
-         <object id="africasvg" data="./assets/img/africa.svg"  type="image/svg+xml">
+    <body class='dtc v-mid w-50 bg-aqua navy phm'>
+        <menu id="controls">
+                South Africa is the only country on the African continent that
+                legally recognizes same-sex unions. See <a href="http://en.wikipedia.org/wiki/LGBT_rights_in_Africa">wikipedia</a> more
+                information.
+         </menu>
+         <object id="africasvg" data="./assets/img/africa.svg"  type="image/svg+xml" height="100%" width="100%">
          </object>
+
     </body>
 
     <script>
@@ -12,14 +20,14 @@
         africasvg = document.getElementById('africasvg');
         africasvgDoc = africasvg.contentDocument;
         nations = africasvgDoc.getElementsByTagName('path');
-        console.log(nations);
+        //console.log(nations);
         for (i=0;i<50;i++){
-            console.log(nations[i].id);
+            //console.log(nations[i].id);
             if (nations[i].id === 'ZA'){
-                nations[i].style.fill = '#088A08';
+                nations[i].style.fill = 'lime';
             }
             else
-                nations[i].style.fill= '#B40404';
+                nations[i].style.fill= 'red';
            }
         }
     </script>
