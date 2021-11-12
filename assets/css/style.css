@@ -1,11 +1,24 @@
-#controls {
-    bottom:0;
-    font-size: 20px;
-    left:0;
-    padding: 5px;
-    position:fixed;
-    width: 240px;
-    z-index: 3;
-    border-color: yellow;
-    text-align: center;
+object {
+  max-width: 100%;
+  display: block;
 }
+
+.sea {
+  background-color: #7fcdff;
+}
+
+#controls {
+    top:0;
+    font-size: 20px;
+    right:30px;
+    padding: 5px;
+    border: 10px;
+    border-style: solid;
+    border-color: red;
+    background-color: white;
+    max-width: 35%;
+    text-align: center;
+    /*position:fixed;*/
+    /*width: 300px; */
+    /*z-index: 3; */
+  }
